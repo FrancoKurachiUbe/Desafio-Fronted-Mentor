@@ -1,14 +1,14 @@
-import MainHeader from './components/header/MainHeader.jsx';
-import MainProduct from './components/product/MainProduct.jsx';
+import IndexHeader from '@/components/header/IndexHeader.jsx';
+import IndexProduct from '@/components/product/IndexProduct.jsx';
+import CartDetailProvider from '@/context/useCartDetails';
 const App = () => { 
     return  (
-        <>
-            <MainHeader />
-            <MainProduct />
-        </>
+        <CartDetailProvider>
+            <IndexHeader />
+            <IndexProduct />
+        </CartDetailProvider>
     );
 };
 
 export default App;
 
-/* 1:11 HS */
